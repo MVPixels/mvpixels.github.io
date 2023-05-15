@@ -1692,11 +1692,12 @@
         padding-bottom: 20px; }
         header#main-header h1 {
           float: left;
-          margin: 42px 0 24px; }
+          margin: 42px 0 5px; }
           header#main-header h1 a {
             display: block;
             height: 65px;
-            width: 242px; }
+            width: 242px; 
+            margin-bottom: -40px; }
         header#main-header ul {
           display: block;
           float: right;
@@ -1705,7 +1706,7 @@
             float: left; }
             header#main-header ul li a {
               color: #2b2b2b;
-              display: block;
+              display: inline;
               font: 500 16px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
               line-height: 20px;
               margin: 0 20px;
@@ -2268,6 +2269,14 @@
         PetaboxLoader3.resolve: 85.243 (2)
       */
       
+      .byline {
+        font-size: 16px;
+        display: inline;
+        font-weight: 500;
+        margin-left: 3px;
+        font-style: normal;
+        font-family: "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
+      }
     </style>
     
   </head>
@@ -2275,7 +2284,7 @@
 <body>
     <header id="main-header">
       <nav id="main-nav">
-        <h1 id="nav-ralph"><a href="">MVPixel</a></h1>
+        <h1 id="nav-ralph"><a href="">MVPixel</a> <span class="byline">by Dain Miller</span></h1>
         <ul>
           <!-- <li id="nav-community"><a href="">Community</a></li> -->
           <li><a href="/contact" id="contact-btn">Contact <span>(252) 495 &ndash; 0484</span></a></li>
